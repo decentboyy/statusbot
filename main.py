@@ -43,7 +43,6 @@ async def main():
                         msg = x.text
                     if msg == "/start":
                         TEXT += f"\n\n**🤖-[{ok.first_name}](tg://openmessage?user_id={ok.id}): OFFLINE** 💀"
-                        await bot.send_message(OWNER_ID, f'Alert {ok.first_name} is offline 💀')
                         await app.read_chat_history(bots)
                     else:
                         TEXT += f"\n\n**🤖-[{ok.first_name}](tg://openmessage?user_id={ok.id}): {msg}**"
