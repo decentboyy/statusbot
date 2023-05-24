@@ -12,7 +12,7 @@ load_dotenv()
 
 app = Client(api_id=int(os.getenv("API_ID")),
              api_hash=os.getenv("API_HASH"),
-             session_name=os.getenv("SESSION_STRING""))
+             session_name=os.getenv("SESSION_STRING"))
 
 bot = Client(api_id=int(os.getenv("API_ID")),
              api_hash=os.getenv("API_HASH"),
