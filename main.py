@@ -10,13 +10,11 @@ from pyrogram.errors import FloodWait
 
 load_dotenv()
 
-app = Client(name="st_userbot"),
-             api_id=int(os.getenv('API_ID')),
+app = Client(api_id=int(os.getenv('API_ID')),
              api_hash=os.getenv("6647d9d827e9e1fdb810c1b27cef423b"),
              session_string=os.getenv("BQGwSY0AqK0LySN4sa_bNvk_UexxgRsibItUMRYKznLn9qMCN6S1Ih9gRW3fprrxN_XctoW8rTxI2Es5uQh_F9-Uk5ow9yKvLfX-ylU1hkM598mTRqIr-tMpQqd0n9AfUkjE8pSCtcxeFZaYIsMaPqDUdSIPJFtJie0RnsQJYcnOOkXT63up0WlPNprlLRecSViy2cAJS8GqX2z89u825Lad3HI-cTO7_jryGfBfTCNmVUiFivysys5dFglXaEzXCvqcbQWnYnCvoSTm2ru3MwQYLWJDr_1lDt2a3JeDA207KBtep0crQ9Q09HJrF7zv-_xnMdoyhyuE_9QBSVkHdvbcKlyTqAAAAAFAylHOAA"))
 
-bot = Client(name="st_bot",
-             api_id=int(os.getenv("28330381")),
+bot = Client(api_id=int(os.getenv("28330381")),
              api_hash=os.getenv("6647d9d827e9e1fdb810c1b27cef423b"),
              bot_token=os.getenv("1719065252:AAFvVycbnICjZXuH5SyV9wfJ3VGDdFvRPhg"))
 
